@@ -1,0 +1,78 @@
+
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <link rel="stylesheet" href="Qus_2.css">
+<title>FORM</title>
+</head>
+
+<body>
+    <div id="outside">
+    <form id="survey-form" action="/my-handling-form-page" method="post">
+    <h1 id="title">Application For Job</h1>
+  
+ 
+    <fieldset>
+
+    <legend>Personal Details</legend>
+
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+
+    <div>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+    
+  
+    </fieldset>
+
+    <fieldset>
+    <label for="Gender">Skills</label>
+    <p>
+      <input type="checkbox" name="tattoo" value="tattoo"> HTML-CSS<br>
+      <input type="checkbox" name="age" value="Car"> JAVA<br>
+      <input type="checkbox" name="car" value="car"> Python<br>
+      <input type="checkbox" name="work" value="work" checked> C++<br>
+      <input type="checkbox" name="rich" value="rich" checked> NoSQL<br>
+      <input type="checkbox" name="loc" value="loc" checked> Java Script<br>
+    </p>
+    </fieldset>
+  
+
+ 
+  
+    <fieldset>
+        
+    
+    <legend>Document Section</legend>
+    <p>Upload Resume<button>Attach Files</button></p>
+    <div>
+      <label for="msg"></label>
+      <p> Tell Us About Yourself: </p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    
+    </fieldset>
+
+    <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button> </div>
+
+</form>
+  </div>
+</body>
+</html>
