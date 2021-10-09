@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>        
+        <script>
+                
+            function coinFlip() {
+                    return(Math.random() < 0.3) ? 'Heads' : 'Tails';
+                    }
+            const howManyTimes= parseInt(prompt('Enter the number of flips ')); 
+            var countHeads=0; 
+            for (var i=0; i<howManyTimes;i++){
+                if (coinFlip()==='Heads'){
+                    countHeads++;
+                     }
+                }
+            document.write("Heads Ratio of "+(howManyTimes)+"-->"+(countHeads/howManyTimes));
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+            var number = parseInt(prompt('Enter the number of terms: '));
+            var n1 = 1, n2 = 1, nextNo;
+            document.write('Fibonacci Series:');
+            for (i = 1; i <= number; i++) {
+            document.write(n1+"<br>");
+            nextNo = n1 + n2;
+            n1 = n2;
+            n2 = nextNo;
+            }
+
+        </script>
+    </body>
+</html>

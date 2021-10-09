@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+        <label for="Dollars">Enter currency in Dollars : </label>
+        <input type="number" name="Dollars" id="Dollars" >
+        <br>
+        <input type="submit" value="Convert" id="Convert">
+
+
+
+
+        
+
+        <script>
+            var submit = document.getElementById("Convert");
+            
+            submit.onclick=function(){
+            var dollars = document.getElementById("Dollars").value ;
+            
+
+            document.write(dollars*74.28 + " Indian Rupees <br>" );
+            document.write(dollars*109.14 + " Japanese Yen <br>");
+            document.write(dollars*0.84 + " Euro <br>");
+            document.write(dollars*0.72 + " Pound sterling <br>");
+        }
+
+        </script>
+    </body>
+</html>

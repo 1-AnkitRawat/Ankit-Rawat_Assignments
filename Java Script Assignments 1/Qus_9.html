@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+                var arr1=["a","b","c"];
+                var arr2=[1,2,3];
+                var l=arr1.length+arr2.length;
+                var arr3=[];
+                var j=0,k=0;
+                function com(arr1,arr2){
+                    for(i=0;i<l;i++){
+                        if(i%2==0){
+                            arr3[i]=arr1[j];
+                            j++;
+                        }
+                        else{
+                            arr3[i]=arr2[k];
+                            k++;
+                        }
+                    }
+                    for(m=0;m<arr3.length;m++){
+                        document.write(arr3[m]);
+                    }
+                }
+                com(arr1,arr2);
+
+        </script>
+    </body>
+</html>

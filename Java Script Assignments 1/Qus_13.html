@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+            loop();
+            function loop()
+            {
+                var a = [5,10,15,20,25,30];
+                var sum1=0,sum2=0, sum3=0, n =a.length;
+                for(i=0; i<n ; i++)
+                {
+                    sum1+=a[i];
+                }
+                i=0;
+                while(i<n){
+                    sum2+=a[i];
+                    i++;
+                }
+                i=0;
+                do{
+                    sum3+=a[i];
+                    i++;
+                } while(i<n);
+                document.write("For loop:" + sum1 + "<br>" + "while loop:" + sum2 + "<br>" + "do while loop:" + sum3 + "<br>");
+                }
+
+        </script>
+    </body>
+</html>
