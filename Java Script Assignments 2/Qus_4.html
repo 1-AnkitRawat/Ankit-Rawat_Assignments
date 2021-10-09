@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       <script>
+
+            var a=[1,2,3,4,5];
+            
+            function map(a,f1)
+            {
+                var newArray =[];
+                for(i=0;i<a.length;i++)
+                newArray.push(f1(a[i]));
+                document.write(newArray);
+            }
+            function square(a){
+            return a*a;
+            }
+            map(a,square);
+        </script>
+    </body>
+</html>

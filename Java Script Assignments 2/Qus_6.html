@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+                var arr=[1,2,3,4,5];
+                var arr2=[];
+                function square(n){
+                    return n*n;
+                }
+                var i=0;
+                function map(arr){
+                    if(i == arr.length){
+                        return;
+                    }
+                    else{
+
+                        
+                        arr2[i]=square(arr[i]);
+                        i++;
+                        map(arr);
+                    }
+                }
+                map(arr);
+                document.write(arr2);
+        </script>
+    </body>
+</html>

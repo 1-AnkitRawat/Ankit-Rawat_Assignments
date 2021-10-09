@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+                var n = window.prompt("Enter the value : ");
+                
+                function square(n){
+                    return n*n;
+                }
+
+                function double(n){
+                    return 2*n;
+                }
+
+                function f1(n){
+                    return square(double(n));
+                }
+
+                function f2(n){
+                    return double(square(n));
+                }
+                document.write("The value of f1 :" + f1(n)+"<br>")
+                document.write("The value of f2 :" + f2(n))
+        </script>
+    </body>
+</html>
