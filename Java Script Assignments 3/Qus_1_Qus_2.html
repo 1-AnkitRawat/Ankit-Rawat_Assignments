@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+            class rectangle{
+                constructor (width,height)
+                {
+                    this.width=width;
+                    this.height=height;
+                    this.getArea = function(){
+                        document.write("Area = "+ (this.height*this.width)+"<br>");
+                    }
+                }
+
+            }
+            var r1 = new rectangle(20,40);
+            var r2 = new rectangle(30,60);
+
+            document.write("r1 width = " + r1.width +" <br> r1 height = " + r1.height + "<br>");
+            document.write("r2 width = " + r2.width +" <br> r2 height = " + r2.height + "<br>");
+            r1.getArea();
+            r2.getArea();
+
+        </script>
+    </body>
+</html>
