@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+
+    <body>
+       
+        
+        <script>
+            function longTocken(str){
+                var res=' ';
+                k=0;
+                list=[];
+                for(i=0;i<str.length;i++){
+                    if(str[i]!='a'&&str[i]!='b'){
+                        var temp='';
+                        for(j=i;j<str.length;j++){
+                            temp+=str[j];
+                            if(str[j+1]=='a'||str[j+1]=='b'){
+                                list.push(temp);
+                                break;
+                            }
+                        }
+                    }
+                    else{
+                        continue;
+                    }
+                }
+                for(z=1;z<list.length;z++){
+                    var maxi=list[0].length;
+                    if(maxi<list[z].length){
+                        res=list[z];
+                    }
+
+                }
+                document.write(res);
+            }
+            longTocken('ababcdababefgababhiab');
+        </script>
+    </body>
+</html>
